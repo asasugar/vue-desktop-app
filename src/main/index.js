@@ -127,4 +127,4 @@ function sendUpdateMessage(text) {
 
 
 // 开机自动启动
-// startOnBoot.enableAutoStart(exeName, process.execPath)
+startOnBoot.enableAutoStart(exeName, process.execPath)

@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper">
     <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
-    <button @click="checkForUpdate">检查更新111</button>
+    <button @click="checkForUpdate">检查更新</button>
     <div>更新提示：{{tips}}</div>
     <p>更新进度:{{downloadPercent}}</p>
     <main>
