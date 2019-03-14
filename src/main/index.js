@@ -5,7 +5,6 @@ import {
 } from 'electron'
 const startOnBoot = require('./startOnBoot.js')
 
-// if (require('electron-squirrel-startup')) return;
 const exeName = 'vue-desktop-app'
 /**
  * Set `__static` path to static files in production
@@ -28,9 +27,9 @@ function createWindow() {
     height: 563,
     useContentSize: true,
     width: 1000,
-    // kiosk: true, // kiosk模式
-    // closable: false, // 不可关闭
-    // frame: false, // 设置无边框
+    kiosk: true, // kiosk模式
+    closable: false, // 不可关闭
+    frame: false, // 设置无边框
     webPreferences: {
       devTools: true // 是否F12开启调试模式
     }
@@ -125,6 +124,7 @@ function sendUpdateMessage(text) {
   mainWindow.webContents.send('message', text)
 }
 
-
-// 开机自动启动
-startOnBoot.enableAutoStart(exeName, process.execPath)
+if (process.env.NODE_ENV !== 'development') {
+  // 开机自动启动
+  startOnBoot.enableAutoStart(exeName, process.execPath)
+}
