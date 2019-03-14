@@ -71,7 +71,7 @@ import {
   autoUpdater
 } from 'electron-updater'
 
-const uploadUrl = "http://img3.oteao.com/download/"
+const uploadUrl = "http://****/download/"
 
 // 检测更新，在你想要检查更新的时候执行，renderer事件触发后的操作自行编写
 function updateHandle() {

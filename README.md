@@ -1,18 +1,18 @@
 # vue-desktop-app
 
-> An electron-vue project
+> An electron-vue project（window系统）
 
 #### Build Setup
 
 ``` bash
 # install dependencies
-npm install
+yarn
 
 # serve with hot reload at localhost:9080
-npm run dev
+yarn dev
 
 # build electron application for production
-npm run build
+yarn build
 
 ```
 

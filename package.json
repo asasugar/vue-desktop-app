@@ -25,7 +25,7 @@
     },
     "publish": {
       "provider": "generic",
-      "url": "http://img3.oteao.com/download/"
+      "url": "http://****/download/"
     },
     "files": [
       "dist/electron/**/*"
